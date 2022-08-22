@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clients</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div class="nav-container">
+    <div class="navbar">
+        <a href="index.html"><h1 id="navbar-logo" class="navbar-logo">Marriot</h1></a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar">Hello,</span>
+            <span class="bar"> Administrator</span>
+        </div>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-links">Bookings</a></li>
+        <li><a href="clients.html" class="nav-links">Guests</a></li>
+    </ul>
+</div>
+</div>
+<div class="w3-container w3-half w3-margin-top">
+    <p>
+        <input id="clientId" class="w3-input" type="hidden" style="width:70%">
+    </p>
+    <p>
+        <label>First Name</label></p>
+    <input id="firstName" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <label>Last Name</label></p>
+    <input id="lastName" class="w3-input" type="text" style="width:70%" required>
+    <p>
+<!--        <label>Date Of Birth</label></p>-->
+<!--    <input id="dob" class="w3-input" type="date" format="yyyy-MM-dd" style="width:70%" required>-->
+<!--    <p>-->
+        <label>Gender</label></p>
+    <input id="gender" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <label>Email</label></p>
+    <input id="email" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <label>Phone Number</label></p>
+    <input id="phoneNumber" class="w3-input" type="number" style="width:70%" required>
+    <p>
+        <label>Id Card</label></p>
+    <input id="idCard" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <label>District</label></p>
+    <input id="district" class="w3-input" type="text" style="width:70%" required>
+    <p>
+
+        <button id="btnSaveClient" onclick="saveClient()" class="w3-button w3-section w3-teal w3-ripple">Add Client</button></p>
+</div>
+<div class="accountList-container">
+    <div class="list-container">
+        <h1 id="accountList" class="accountList">Hotel Guests</h1>
+        <div id="clientData" class="w3-container"></div>
+    </div>
+</div>
+<script src="client.js"></script>
+</body>
+</html>

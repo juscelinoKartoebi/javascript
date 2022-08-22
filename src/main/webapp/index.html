@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Administration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div class="nav-container">
+    <div class="navbar">
+        <a href="index.html"><h1 id="navbar-logo" class="navbar-logo">Marriot</h1></a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar">Hello,</span>
+            <span class="bar"> Administrator</span>
+        </div>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-links">Bookings</a></li>
+        <li><a href="clients.html" class="nav-links">Guests</a></li>
+    </ul>
+</div>
+</div>
+<div class="w3-container w3-half w3-margin-top">
+    <p>
+        <label>Guest ID</label></p>
+    <input id="client" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <label>Room Type</label></p>
+    <input id="type" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <label>Currency</label></p>
+    <input id="currency" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <label>Cost Price</label></p>
+    <input id="balance" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <label>Adds</label></p>
+    <input id="adds" class="w3-input" type="text" style="width:70%" required>
+    <p>
+        <button id="btnSaveAccount" onclick="addAccount()" class="w3-button w3-section w3-teal w3-ripple">Add Account</button></p>
+</div>
+<div class="accountList-container">
+    <div class="list-container">
+        <h1 id="accountList" class="accountList">Bookings</h1>
+        <div id="accountData" class="w3-container"></div>
+    </div>
+</div>
+<script src="App.js"></script>
+</body>
+</html>
